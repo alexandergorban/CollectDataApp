@@ -1,4 +1,5 @@
 ﻿using System;
+using CollectDataApp.Presentations;
 
 namespace CollectDataApp
 {
@@ -6,7 +7,8 @@ namespace CollectDataApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Start App
+            new Menu().StartApp();
         }
     }
 }
