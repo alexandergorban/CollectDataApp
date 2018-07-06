@@ -149,7 +149,7 @@ namespace CollectDataApp.Views
 
             foreach (var comment in shortComments)
             {
-                Console.WriteLine($"Comment: {comment.Body} \n Comment length: {comment.Body.Length}\n");
+                Console.WriteLine($"Comment: {comment.Body} \nComment length: {comment.Body.Length}\n");
             }
         }
 
