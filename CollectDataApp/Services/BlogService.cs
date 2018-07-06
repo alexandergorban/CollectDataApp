@@ -10,13 +10,13 @@ using Newtonsoft.Json;
 
 namespace CollectDataApp.Services
 {
-    class DataService
+    class BlogService
     {
         private readonly HttpClient _client;
 
-        public DataService()
+        public BlogService(HttpClient client)
         {
-            _client = new HttpClient();
+            _client = client;
         }
 
         private async Task<List<T>> GetDataCollectionByEndpointAsync<T>(string endpoint) where T : IEndpoint
@@ -98,6 +98,5 @@ namespace CollectDataApp.Services
 
             return users;
         }
-
     }
 }
