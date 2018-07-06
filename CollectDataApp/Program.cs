@@ -1,5 +1,5 @@
 ﻿using System;
-using CollectDataApp.Presentations;
+using CollectDataApp.Views;
 
 namespace CollectDataApp
 {
@@ -8,7 +8,7 @@ namespace CollectDataApp
         static void Main(string[] args)
         {
             //Start App
-            new Menu().StartApp();
+            new Menu().StartApp().GetAwaiter().GetResult();
         }
     }
 }
